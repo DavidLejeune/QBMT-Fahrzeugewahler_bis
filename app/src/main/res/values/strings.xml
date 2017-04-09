@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Fahrzeuge wahler</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_presents">presents</string>
+    <string name="choose_your_avatar">Choose your avatar :</string>
+    <string name="enter_your_name">Enter your name :</string>
+    <string name="welcome_nyou_need_to_register_to_continue">Welcome , \nyou need to register to continue</string>
+    <string name="select_your_vehicle">Select your vehicle :</string>
+    <string name="welcome">Welcome</string>
+    <string name="txt_price">0 $</string>
+    <string name="total_price">Total price :</string>
+    <string name="car_name_here">Car name here</string>
+    <string name="select_your_option_s">Select your option(s) :</string>
+    <string name="this_is_your_amazing_vehicle">This is your amazing vehicle :</string>
+    <string name="with_the_following_option_s">With the following option(s) :</string>
+    <string name="textview">TextView</string>
+    <string name="lbl_menu_welcome">Welcome</string>
+    <string name="lbl_menuwelcome">Welcome</string>
+    <string name="lbl_total_price">Total price :</string>
+
+
+    <string-array name="image_ids">
+        <item>@drawable/avatar0</item>
+        <item>@drawable/avatar1</item>
+        <item>@drawable/avatar2</item>
+        <item>@drawable/avatar3</item>
+        <item>@drawable/avatar4</item>
+        <item>@drawable/avatar5</item>
+        <item>@drawable/avatar6</item>
+        <item>@drawable/avatar7</item>
+    </string-array>
+</resources>

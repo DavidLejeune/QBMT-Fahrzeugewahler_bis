@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lejeune.david.fahrzeugewahler.RegisterActivity">
+
+    <ImageView
+        app:srcCompat="@drawable/avatar00"
+        android:id="@+id/imgProfileRegister"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:text="@string/choose_your_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gridView"
+        android:id="@+id/lblAvatarRegister"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:text="@string/welcome_nyou_need_to_register_to_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtIntroRegister"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgProfileRegister"
+        android:layout_toEndOf="@+id/imgProfileRegister"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="21dp"
+        android:id="@+id/txtUsernameRegister"
+        android:layout_below="@+id/imgProfileRegister"
+        android:layout_toRightOf="@+id/lblAvatarRegister"
+        android:layout_toEndOf="@+id/lblAvatarRegister" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:id="@+id/gridView"
+        android:stretchMode="columnWidth"
+        android:columnWidth="50dp"
+        android:numColumns="4"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="88dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/register"
+        android:id="@+id/imgRegister"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:text="@string/enter_your_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblNameRegister"
+        android:elevation="1dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry,UnusedAttribute"
+        android:layout_alignBaseline="@+id/txtUsernameRegister"
+        android:layout_alignBottom="@+id/txtUsernameRegister"
+        android:layout_toLeftOf="@+id/txtUsernameRegister"
+        android:layout_toStartOf="@+id/txtUsernameRegister"
+        android:paddingRight="5dp" />
+
+</RelativeLayout>

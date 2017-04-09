@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lejeune.david.fahrzeugewahler.ShowActivity">
+
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imgProfileShow"
+        tools:ignore="ContentDescription"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+    <TextView
+        android:text="@string/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsernameShow"
+        android:paddingLeft="5dp"
+        android:textSize="32sp"
+        android:layout_alignBottom="@+id/imgProfileShow"
+        android:layout_toRightOf="@+id/imgProfileShow"
+        android:layout_toEndOf="@+id/imgProfileShow"
+        android:layout_marginBottom="15dp"
+        tools:ignore="RelativeOverlap,RtlHardcoded,RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/imgOption1Show"
+        tools:ignore="ContentDescription"
+        app:srcCompat="@drawable/siren"
+        android:layout_alignTop="@+id/imgOption0Show"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:text="@string/car_name_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCarNameShow"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtInfoShow"
+        android:layout_alignEnd="@+id/txtInfoShow" />
+
+    <ImageView
+        android:id="@+id/imgCarShow"
+        tools:ignore="ContentDescription"
+        android:layout_width="230dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtInfoShow" />
+
+    <ImageView
+        android:id="@+id/imgOption0Show"
+        tools:ignore="ContentDescription"
+        app:srcCompat="@drawable/zorabots"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/txtInfo2Show"
+        android:layout_toLeftOf="@+id/imgOption1Show"
+        android:layout_toStartOf="@+id/imgOption1Show" />
+
+    <TextView
+        android:text="@string/this_is_your_amazing_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInfoShow"
+        android:layout_below="@+id/imgProfileShow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:text="@string/with_the_following_option_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInfo2Show"
+        android:layout_above="@+id/imgCarShow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/lblPriceShow" />
+
+    <TextView
+        android:text="@string/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPriceShow"
+        android:paddingLeft="5dp"
+        android:textSize="32sp"
+        tools:ignore="RelativeOverlap,RtlHardcoded,RtlSymmetry"
+        android:layout_below="@+id/lblPriceShow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
