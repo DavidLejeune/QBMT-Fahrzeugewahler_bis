@@ -37,7 +37,7 @@ Uitwerking :
 
           options :
                       id,name,desciptor,image,price
-                      1,Big beams,big_beams,option0,375
+                      1,Logo,logo,option0,375
                       2,Police lights,police_lights,option1,525
 
           options_car0 :
