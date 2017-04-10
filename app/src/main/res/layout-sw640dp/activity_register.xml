@@ -14,20 +14,12 @@
     <ImageView
         app:srcCompat="@drawable/avatar00"
         android:id="@+id/imgProfileRegister"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        tools:ignore="ContentDescription" />
-
-    <TextView
-        android:text="@string/choose_your_avatar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/gridView"
-        android:id="@+id/lblAvatarRegister"
-        android:paddingBottom="5dp" />
+        tools:ignore="ContentDescription"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
 
     <TextView
         android:text="@string/welcome_nyou_need_to_register_to_continue"
@@ -38,39 +30,19 @@
         android:layout_toRightOf="@+id/imgProfileRegister"
         android:layout_toEndOf="@+id/imgProfileRegister"
         android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp" />
+        android:layout_marginStart="28dp"
+        android:textSize="32sp" />
 
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="55dp"
         android:id="@+id/txtUsernameRegister"
         android:layout_below="@+id/imgProfileRegister"
-        android:layout_toRightOf="@+id/lblAvatarRegister"
-        android:layout_toEndOf="@+id/lblAvatarRegister" />
-
-    <GridView
-        android:layout_width="match_parent"
-        android:id="@+id/gridView"
-        android:stretchMode="columnWidth"
-        android:columnWidth="50dp"
-        android:numColumns="4"
-        android:layout_height="150dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="88dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/register"
-        android:id="@+id/imgRegister"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        tools:ignore="ContentDescription" />
+        android:layout_alignLeft="@+id/imgRegister"
+        android:layout_alignStart="@+id/imgRegister" />
 
     <TextView
         android:text="@string/enter_your_name"
@@ -79,10 +51,44 @@
         android:id="@+id/lblNameRegister"
         android:elevation="1dp"
         tools:ignore="RtlHardcoded,RtlSymmetry,UnusedAttribute"
-        android:layout_alignBaseline="@+id/txtUsernameRegister"
-        android:layout_alignBottom="@+id/txtUsernameRegister"
-        android:layout_toLeftOf="@+id/txtUsernameRegister"
-        android:layout_toStartOf="@+id/txtUsernameRegister"
-        android:paddingRight="5dp" />
+        android:paddingRight="5dp"
+        android:textSize="32sp"
+        android:layout_alignTop="@+id/txtUsernameRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/choose_your_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblAvatarRegister"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/txtUsernameRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="248dp"
+        android:textSize="32sp" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:id="@+id/gridView"
+        android:stretchMode="columnWidth"
+        android:columnWidth="50dp"
+        android:numColumns="4"
+        android:layout_height="150dp"
+        android:layout_below="@+id/lblAvatarRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/register"
+        android:id="@+id/imgRegister"
+        tools:ignore="ContentDescription"
+        android:layout_marginTop="157dp"
+        android:layout_below="@+id/gridView"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

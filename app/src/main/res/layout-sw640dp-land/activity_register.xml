@@ -11,16 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.lejeune.david.fahrzeugewahler.RegisterActivity">
 
-    <ImageView
-        app:srcCompat="@drawable/avatar00"
-        android:id="@+id/imgProfileRegister"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        tools:ignore="ContentDescription" />
-
     <TextView
         android:text="@string/welcome_nyou_need_to_register_to_continue"
         android:layout_width="wrap_content"
@@ -30,7 +20,8 @@
         android:layout_toRightOf="@+id/imgProfileRegister"
         android:layout_toEndOf="@+id/imgProfileRegister"
         android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp" />
+        android:layout_marginStart="28dp"
+        android:textSize="32sp" />
 
     <TextView
         android:text="@string/enter_your_name"
@@ -43,7 +34,8 @@
         android:layout_alignBaseline="@+id/txtUsernameRegister"
         android:layout_alignBottom="@+id/txtUsernameRegister"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="32sp" />
 
     <GridView
         android:layout_width="match_parent"
@@ -74,16 +66,27 @@
         android:paddingBottom="5dp"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="32sp" />
 
     <ImageView
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         app:srcCompat="@drawable/register"
         android:id="@+id/imgRegister"
         tools:ignore="ContentDescription"
-        android:layout_width="150dp"
         android:layout_alignBottom="@+id/txtUsernameRegister"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_width="300dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/avatar00"
+        android:id="@+id/imgProfileRegister"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
 
 </RelativeLayout>

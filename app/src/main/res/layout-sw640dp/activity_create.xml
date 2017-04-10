@@ -13,58 +13,83 @@
 
 
     <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/imgProfileCreate"
-        tools:ignore="ContentDescription" />
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/buy"
+        android:id="@+id/imgBuy"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
-
-    <TextView
-        android:text="@string/welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtUsernameCreate"
-        android:paddingLeft="5dp"
-        android:textSize="32sp"
-        android:layout_alignBottom="@+id/imgProfileCreate"
-        android:layout_toRightOf="@+id/imgProfileCreate"
-        android:layout_toEndOf="@+id/imgProfileCreate"
-        android:layout_marginBottom="15dp"
-        tools:ignore="RelativeOverlap,RtlHardcoded,RtlSymmetry" />
+    <ImageView
+        app:srcCompat="@drawable/siren"
+        android:id="@+id/imgOption1"
+        tools:ignore="ContentDescription"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/imgOption0"
+        android:layout_toRightOf="@+id/imgCar"
+        android:layout_toEndOf="@+id/imgCar" />
 
     <TextView
-        android:text="@string/select_your_vehicle"
+        android:text="@string/select_your_option_s"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imgProfileCreate"
+        android:id="@+id/txtInfo2"
+        android:layout_above="@+id/imgOption0"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="16dp"
-        android:id="@+id/txtInfo"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginBottom="22dp"
+        android:textSize="32sp" />
+
+    <ImageView
+        app:srcCompat="@drawable/zorabots"
+        android:id="@+id/imgOption0"
+        tools:ignore="ContentDescription"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/imgBuy"
+        android:layout_toLeftOf="@+id/imgBuy"
+        android:layout_toStartOf="@+id/imgBuy" />
 
     <ImageView
         app:srcCompat="@drawable/car2"
         android:id="@+id/imgCar"
         tools:ignore="ContentDescription"
-        android:layout_width="230dp"
-        android:layout_below="@+id/txtInfo"
-        android:layout_centerHorizontal="true"
-        android:layout_height="200dp" />
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_above="@+id/txtInfo2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/select_your_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInfo"
+        android:layout_above="@+id/imgCar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="32sp" />
+
+    <TextView
+        android:text="@string/car_name_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
+        android:id="@+id/txtCarName"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:layout_above="@+id/txtInfo2"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         app:srcCompat="@drawable/left"
         android:id="@+id/imgLeft"
         tools:ignore="ContentDescription"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/txtInfo"
+        android:layout_width="100dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/txtCarName"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_height="200dp"
         android:layout_toLeftOf="@+id/imgCar"
         android:layout_toStartOf="@+id/imgCar" />
 
@@ -72,24 +97,13 @@
         app:srcCompat="@drawable/right"
         android:id="@+id/imgRight"
         tools:ignore="ContentDescription"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/txtInfo"
+        android:layout_width="100dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/txtCarName"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_height="200dp"
         android:layout_toRightOf="@+id/imgCar"
         android:layout_toEndOf="@+id/imgCar" />
-
-    <TextView
-        android:text="@string/total_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/lblPrice"
-        android:layout_above="@+id/txtUsernameCreate"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="24dp"
-        android:layout_marginEnd="24dp" />
 
     <TextView
         android:text="@string/txt_price"
@@ -97,58 +111,44 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtPrice"
         android:paddingLeft="5dp"
-        android:textSize="32sp"
+        android:textSize="64sp"
         tools:ignore="RelativeOverlap,RtlHardcoded,RtlSymmetry"
+        android:layout_marginTop="29dp"
         android:layout_below="@+id/lblPrice"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="@string/car_name_here"
+        android:text="@string/total_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imgCar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="19dp"
-        android:id="@+id/txtCarName"
-        android:textAlignment="center" />
+        android:id="@+id/lblPrice"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="32sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imgProfileCreate"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
 
     <TextView
-        android:text="@string/select_your_option_s"
+        android:text="@string/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtInfo2"
-        android:layout_below="@+id/imgCar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="75dp"
-        app:srcCompat="@drawable/zorabots"
-        android:id="@+id/imgOption0"
-        android:layout_height="75dp"
-        tools:ignore="ContentDescription"
-        android:layout_below="@+id/txtInfo2"
+        android:id="@+id/txtUsernameCreate"
+        android:paddingLeft="5dp"
+        android:textSize="64sp"
+        tools:ignore="RelativeOverlap,RtlHardcoded,RtlSymmetry"
+        android:layout_below="@+id/lblPrice"
         android:layout_toRightOf="@+id/imgProfileCreate"
-        android:layout_toEndOf="@+id/imgProfileCreate"
-        android:layout_marginTop="12dp" />
-
-    <ImageView
-        android:layout_width="75dp"
-        app:srcCompat="@drawable/siren"
-        android:id="@+id/imgOption1"
-        android:layout_height="75dp"
-        tools:ignore="ContentDescription"
-        android:layout_alignTop="@+id/imgOption0"
-        android:layout_toRightOf="@+id/txtUsernameCreate"
-        android:layout_toEndOf="@+id/txtUsernameCreate" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/buy"
-        android:id="@+id/imgBuy"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_toEndOf="@+id/imgProfileCreate" />
 
 </RelativeLayout>

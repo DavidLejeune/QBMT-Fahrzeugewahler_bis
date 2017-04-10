@@ -12,25 +12,14 @@
     tools:context="com.lejeune.david.fahrzeugewahler.MenuActivity">
 
     <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
         app:srcCompat="@drawable/avatar00"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/imgProfileMenu"
-        tools:ignore="ContentDescription" />
-
-    <TextView
-        android:text="@string/lbl_menu_welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imgProfileMenu"
-        android:layout_toEndOf="@+id/imgProfileMenu"
-        android:id="@+id/txtWelcome"
-        android:paddingLeft="5dp"
-        tools:ignore="RtlHardcoded,RtlSymmetry" />
+        tools:ignore="ContentDescription"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
 
     <TextView
         android:text="@string/lbl_menuwelcome"
@@ -38,7 +27,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtUsernameMenu"
         android:paddingLeft="5dp"
-        android:textSize="32sp"
+        android:textSize="64sp"
         android:layout_below="@+id/txtWelcome"
         android:layout_toRightOf="@+id/imgProfileMenu"
         android:layout_toEndOf="@+id/imgProfileMenu"
@@ -55,28 +44,38 @@
         android:id="@+id/txtInfoMenu"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="@android:color/background_dark"
+        android:textSize="32sp" />
 
-    <ImageView
+    <TextView
+        android:text="@string/lbl_menu_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/txtWelcome"
+        android:paddingLeft="5dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgProfileMenu"
+        android:layout_toEndOf="@+id/imgProfileMenu"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:layout_width="300dp"
         app:srcCompat="@drawable/select_vehicle"
         android:id="@+id/imgSelectVehicle"
-        android:layout_below="@+id/imgCreateVehicle"
+        tools:ignore="ContentDescription"
+        android:layout_marginBottom="298dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        tools:ignore="ContentDescription" />
+        android:layout_height="100dp" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:srcCompat="@drawable/create_vehicle"
-        android:layout_marginTop="63dp"
         android:id="@+id/imgCreateVehicle"
-        android:layout_below="@+id/txtInfoMenu"
+        tools:ignore="ContentDescription"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/imgSelectVehicle"
         android:layout_alignLeft="@+id/imgSelectVehicle"
-        android:layout_alignStart="@+id/imgSelectVehicle"
-        android:layout_alignRight="@+id/imgSelectVehicle"
-        android:layout_alignEnd="@+id/imgSelectVehicle"
-        tools:ignore="ContentDescription" />
+        android:layout_alignStart="@+id/imgSelectVehicle" />
 </RelativeLayout>

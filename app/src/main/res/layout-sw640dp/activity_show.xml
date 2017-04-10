@@ -13,13 +13,13 @@
 
 
     <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/imgProfileShow"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
 
 
     <TextView
@@ -28,20 +28,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtUsernameShow"
         android:paddingLeft="5dp"
-        android:textSize="32sp"
+        android:textSize="64sp"
         android:layout_alignBottom="@+id/imgProfileShow"
         android:layout_toRightOf="@+id/imgProfileShow"
         android:layout_toEndOf="@+id/imgProfileShow"
         android:layout_marginBottom="15dp"
         tools:ignore="RelativeOverlap,RtlHardcoded,RtlSymmetry" />
-
-    <ImageView
-        android:id="@+id/imgCarShow"
-        tools:ignore="ContentDescription"
-        android:layout_width="230dp"
-        android:layout_below="@+id/txtInfoShow"
-        android:layout_centerHorizontal="true"
-        android:layout_height="200dp" />
 
     <TextView
         android:text="@string/total_price"
@@ -52,7 +44,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="24dp"
-        android:layout_marginEnd="24dp" />
+        android:layout_marginEnd="24dp"
+        android:textSize="32sp" />
 
     <TextView
         android:text="@string/txt_price"
@@ -60,7 +53,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtPriceShow"
         android:paddingLeft="5dp"
-        android:textSize="32sp"
+        android:textSize="64sp"
         tools:ignore="RelativeOverlap,RtlHardcoded,RtlSymmetry"
         android:layout_below="@+id/lblPriceShow"
         android:layout_alignParentRight="true"
@@ -74,37 +67,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="19dp"
         android:id="@+id/txtCarNameShow"
-        android:textAlignment="center" />
-
-    <TextView
-        android:text="@string/with_the_following_option_s"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtInfo2Show"
-        android:layout_below="@+id/imgCarShow"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="75dp"
-        android:id="@+id/imgOption0Show"
-        android:layout_height="75dp"
-        tools:ignore="ContentDescription"
-        android:layout_below="@+id/txtInfo2Show"
-        android:layout_toRightOf="@+id/imgProfileShow"
-        android:layout_toEndOf="@+id/imgProfileShow"
-        android:layout_marginTop="12dp"
-        app:srcCompat="@drawable/zorabots" />
-
-    <ImageView
-        android:layout_width="75dp"
-        android:id="@+id/imgOption1Show"
-        android:layout_height="75dp"
-        tools:ignore="ContentDescription"
-        android:layout_alignTop="@+id/imgOption0Show"
-        android:layout_toRightOf="@+id/txtUsernameShow"
-        android:layout_toEndOf="@+id/txtUsernameShow"
-        app:srcCompat="@drawable/siren" />
+        android:textAlignment="center"
+        android:textSize="32sp" />
 
     <TextView
         android:text="@string/this_is_your_amazing_vehicle"
@@ -114,7 +78,47 @@
         android:id="@+id/txtInfoShow"
         android:layout_below="@+id/imgProfileShow"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/imgCarShow"
+        tools:ignore="ContentDescription"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_below="@+id/txtInfoShow"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imgOption0Show"
+        tools:ignore="ContentDescription"
+        app:srcCompat="@drawable/zorabots"
+        android:layout_below="@+id/txtInfo2Show"
+        android:layout_toRightOf="@+id/imgProfileShow"
+        android:layout_toEndOf="@+id/imgProfileShow"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <ImageView
+        android:id="@+id/imgOption1Show"
+        tools:ignore="ContentDescription"
+        app:srcCompat="@drawable/siren"
+        android:layout_below="@+id/txtInfo2Show"
+        android:layout_toRightOf="@+id/txtUsernameShow"
+        android:layout_toEndOf="@+id/txtUsernameShow"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:text="@string/with_the_following_option_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInfo2Show"
+        android:textSize="32sp"
+        android:layout_below="@+id/txtCarNameShow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
 
 
 </RelativeLayout>
